@@ -1,0 +1,120 @@
+# Foot Terminal Configuration for Alpine Diskless
+# Place at: ~/.config/foot/foot.ini
+
+[main]
+# Font - use Noto for emoji support
+font=DejaVu Sans Mono:size=10
+font=DejaVu Sans Mono:size=10:style=Bold
+font=Noto Color Emoji:size=10
+
+# Start with server for faster launch
+# Run: foot --server in sway config
+# Then use: footclient for new windows
+
+# Scrollback lines (kept in RAM)
+scrollback-lines=10000
+
+# Enable ligatures
+# render-glyphs=always
+
+# Dynamic title
+dynamic-title=yes
+
+# Confirm close if processes running
+confirm-close=yes
+
+# Bell
+bell-action=visual
+
+# Colors - Catppuccin Mocha theme
+[colors]
+foreground=#cdd6f4
+background=#1e1e2e
+cursor=#f5e0dc
+selection=#45475a
+
+# Black
+regular0=#1e1e2e
+bright0=#585b70
+
+# Red
+regular1=#f38ba8
+bright1=#f38ba8
+
+# Green
+regular2=#a6e3a1
+bright2=#a6e3a1
+
+# Yellow
+regular3=#f9e2af
+bright3=#f9e2af
+
+# Blue
+regular4=#89b4fa
+bright4=#89b4fa
+
+# Magenta
+regular5=#f5c2e7
+bright5=#f5c2e7
+
+# Cyan
+regular6=#94e2d5
+bright6=#94e2d5
+
+# White
+regular7=#bac2de
+bright7=#a6adc8
+
+# Dim colors
+dim0=#1e1e2e
+dim1=#f38ba8
+dim2=#a6e3a1
+dim3=#f9e2af
+dim4=#89b4fa
+dim5=#f5c2e7
+dim6=#94e2d5
+dim7=#bac2de
+
+# Shell
+[shell]
+# Use fish if installed, otherwise bash
+# login-shell=yes
+
+# URL handling
+[url]
+# Ctrl+Click to open
+launch=footclient
+# Or use: launch=xdg-open
+
+# Key bindings
+[key-bindings]
+# Scrollback
+ctrl+shift+up=scroll-up
+ctrl+shift+down=scroll-down
+ctrl+shift+pageup=scroll-page-up
+ctrl+shift+pagedown=scroll-page-down
+shift+pageup=scroll-page-up
+shift+pagedown=scroll-page-down
+
+# Font size
+ctrl+plus=increase-font-size
+ctrl+minus=decrease-font-size
+ctrl+0=reset-font-size
+
+# Copy/paste (Wayland)
+ctrl+shift+c=copy
+ctrl+shift+v=paste
+ctrl+shift+insert=paste
+
+# New window/tab (requires foot --server)
+ctrl+shift+n=spawn-new-terminal
+ctrl+shift+t=spawn-new-terminal-tab
+
+# Search
+ctrl+shift+f=search
+
+# Fullscreen
+f11=toggle-fullscreen
+
+# Selection modes
+ctrl+shift+space=toggle-url-mode
